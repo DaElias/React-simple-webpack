@@ -2,10 +2,12 @@ const path = require("path");
 const HtmlWebpackPugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
+// eslint-disable-next-line no-undef
 module.exports = {
   mode: "development",
   entry: "./src/index.js",
   output: {
+    // eslint-disable-next-line no-undef
     path: path.resolve(__dirname, "dist"),
     filename: "bundle.js",
   },
@@ -42,6 +44,7 @@ module.exports = {
   ],
   devServer: {
     static: {
+      // eslint-disable-next-line no-undef
       directory: path.join(__dirname, "app"),
     },
     compress: true,
