@@ -1,0 +1,33 @@
+.container{
+    display: grid;
+    grid-template-columns: 50%;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+}
+
+code {
+    color: white;
+    font-size: 80px;
+}
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.Logo {
+  animation-name: girar;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  /* linear | ease | ease-in | ease-out | ease-in-out */
+  animation-timing-function: linear;
+  position: relative;
+  left: 20%;
+  margin-top: 50px;
+}
+body{
+    background-color: #4f8b8b;
+}

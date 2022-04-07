@@ -1,9 +1,16 @@
 import React from "react";
+import Logo from "../react.png";
+import "../index.css";
 
-
-const App = () => {
-  return <h1>APP</h1>;
-};
-
+function App() {
+  return (
+    <div className="container">
+      <code>
+        Config <b> {"<DCerchiaro/>"}</b>
+      </code>
+      <img className="Logo" src={Logo}></img>
+    </div>
+  );
+}
 
 export default App;
